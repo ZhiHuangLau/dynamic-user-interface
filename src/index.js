@@ -1,6 +1,7 @@
 const choices=document.querySelectorAll(".choice");
 const toggleSwitches=document.querySelectorAll("button#toggle");
 
+
 choices.forEach(choice => {
   choice.classList.add("hidden");
 });
@@ -21,4 +22,14 @@ toggleSwitches.forEach(toggleSwitch => {
     
   };
   
+});
+
+choices.forEach(choice => {
+  choice.onclick=function(){
+    shownText=choice.textContent;
+    let dad=choice.parentElement;
+    outputDiv=dad.firstElementChild;
+    outputDiv.textContent=shownText;
+
+  }
 });

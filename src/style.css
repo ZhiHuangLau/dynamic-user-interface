@@ -1,8 +1,30 @@
+.dropdown{
+  display: flex;
+  flex-direction: row;
+}
+
+.choices{
+  display: flex;
+  flex-direction: column;
+}
+
+.choices>div{
+  width:100px;
+  height:30px;
+  border: black;
+  border-style: solid;
+  border-width: 1px;
+}
+
+button#toggle{
+  width:100px;
+  height:30px;
+}
 .visible{
   font-size:10;
 }
 
 .hidden{
-  font-size: 30;
-  color: red;
+  font-size: 30px;
+  display: none;
 }
